@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   template: `
   {{titleMWA}}
     <app-counter (eventClick)="updateCounter($event)" [counterValue]='counter'></app-counter>
-  `,
+    <input #be (keyup)='0' /> You Entered: {{be.value}}
+    `,
 
   styles: []
 })
