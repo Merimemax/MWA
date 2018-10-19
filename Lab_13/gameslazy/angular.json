@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gameslazy": {
+    "services-and-routes": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gameslazy",
+            "outputPath": "dist/services-and-routes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gameslazy:build"
+            "browserTarget": "services-and-routes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gameslazy:build:production"
+              "browserTarget": "services-and-routes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gameslazy:build"
+            "browserTarget": "services-and-routes:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "gameslazy-e2e": {
+    "services-and-routes-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gameslazy:serve"
+            "devServerTarget": "services-and-routes:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gameslazy:serve:production"
+              "devServerTarget": "services-and-routes:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "gameslazy"
+  "defaultProject": "services-and-routes"
 }
